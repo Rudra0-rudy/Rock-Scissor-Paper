@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin:0;
+}
+ul li{ 
+    list-style: none;
+}
+body{
+    background-color: #F2D0A4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+div.navbar{
+    background-color: #C03221;
+    color: white;
+    padding: 2.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.mainc{
+    text-align: center;
+    /* padding: 2rem;
+    margin-top: 2rem; */
+    font-size: 22px;
+    height: 40vh; 
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.btn button{
+    padding: 20px 55px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #C03221;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.btn button:hover{
+    background-color: #760800;
+    transition: 0.2s;
+    scale: 1.059;
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.container1 img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    object-fit:contain;
+    background-color: #f6eedf;;
+}
+.container1 img:hover{
+    transform: scale(1.096);
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    transition: 0.25s;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 244px;
+    font-size: large;
+    font-weight: bold;
+    padding: 30px;
+    /* margin-top: 20px; */
+}
+.footer-cut-container {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Adjust as needed */
+    background:#F2D0A4; /* Match your page background */
+    overflow: hidden;
+}
+
+.rudra {
+    font-size: 25rem;        /* Adjust for fit */
+    font-weight: 780;
+    color: #C03221;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    line-height: 1;
+    z-index: 1;              /* behind footer */
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+     /* text-shadow: 
+        0 0 10px rgba(255, 246, 246, 0.534), 
+        0 0 20px rgba(250, 234, 234, 0.368),
+        0 0 30px rgba(255, 243, 243, 0.626); */
+} 
+
+footer {
+    background-color: #C03221;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;              /* above .rudra */
+    font-size: 1rem;
+    border-top: none;
+}
+
+/* Night Mode Button */
+.dark-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fffcfc; /* default icon color */
+  transition: color 0.3s ease;
+ background-color:rgb(255, 30, 1);
+  border-radius: 50%;
+  padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+position:fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.dark-btn svg {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dark-btn:hover svg {
+  transform: scale(1.1);
+}
+
+body.dark-mode .dark-btn {
+  color: #f3f3f3; /* icon turns white in dark mode */
+}

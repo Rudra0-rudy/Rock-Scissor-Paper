@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors : Main </title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar">
+      <ul>
+        <li>
+          <h1>Rudy's Game (¬‿¬)</h1>
+        </li>
+      </ul>
+      <div class="ul">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rule.html">Game Rules</a></li>
+          <li><a href="about.html">About</a></li>
+      </div>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="game-container">
+      <h1>Rock Scissors Paper Game</h1>
+      <p>Can You beat the computer!</p>
+      <h2 style="font-size:24px;">Choose your Move...(Rock,Scissor,Paper)</h2>
+      <div class="arrow">↙ ↓ ↘</div>
+      <div class="game-images">
+        <img src="rock.png" alt="Rock" class="game-image" id="rock">
+        <img src="scissor.png" alt="Scissor" class="game-image" id="scissor">
+        <img src="Paper.png" alt="Paper" class="game-image" id="paper">
+      </div>
+      <div id="result" class="result">
+        <!-- <p class="result-text">Make your move!</p> -->
+        <div class="result-p">
+          <div id="userChoicep" class="choice">Your choice:</div>
+          <div id="computerChoicep" class="choice">Computer Choice:</div>
+        </div>
+        <div id="resultMessage" class="result-message">Result</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="scoreCard">
+        <h2>Score Card</h2>
+        <div class="score">
+          <p id="userScore" style="font-size: 1.5rem; font-weight: 600;">User: </p>
+          <p id="computerScore" style="font-size: 1.5rem; font-weight: 600;">Computer: </p>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+
+
+  <script src="app.js"></script>
+  <footer>
+    <p>© 2025 Rudy's Game. All rights reserved.</p>
+    <p>Created by Rudra 🙏</p>
+  </footer>
+</body>
+
+</html>

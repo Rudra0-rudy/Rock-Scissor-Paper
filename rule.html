@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors : Game-Rules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin:0; padding:0;
+    }
+    ul li{ list-style:none }
+    body{
+      background-color:#F2D0A4;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height:1.6;
+    }
+    div.navbar{
+      background-color:#C03221;
+      color:white;
+      padding:2.2rem;
+      text-align:center;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+    }
+    .navbar ul{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:40px;
+    }
+    .navbar ul li a{
+      text-decoration:none;
+      color:white;
+      font-size:1.4rem;
+      font-weight:600;
+    }
+
+    .wrap{max-width:1000px; margin:40px auto; padding:20px;}
+    header{margin-bottom:30px;}
+    .navbar{ color:#faf5f4; margin-bottom:.6rem;}
+    .wrap h1{font-size:2.5rem; margin-bottom:10px; color:#C03221;}
+    .lead{color:#333; font-size:1.1rem;}
+    h2{margin:.8rem 0 .5rem; color:#C03221}
+    ul.list{margin:10px 0 20px; padding-left:15px;}
+    ul.list li{margin:6px 0;}
+    footer{ text-align:center; margin:30px 0; color:#333 }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+        <div class="navbar">
+            <ul> 
+                <li><h1>Rudy's Game (¬‿¬)</h1></li>
+            </ul>
+            <div class="ul"><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rule.html">Game Rules</a></li>
+            <li><a href="about.html">About</a></li></div>
+        </ul></div>
+    </nav>
+
+  <div class="wrap">
+    <header>
+      <h1>Game Rules — Rock • Paper • Scissors</h1>
+      <p class="lead">Welcome to the ultimate hand‑sign showdown! Learn the basics in seconds and start winning in style.</p>
+    </header>
+
+    <section>
+      <h2>🔥 How to Play</h2>
+      <ul class="list">
+        <li><strong>Choose your move</strong> — Rock ✊, Paper 🖐️, or Scissors ✌️.</li>
+        <li><strong>Face your opponent</strong> — challenge the computer 🤖</li>
+        <li><strong>Reveal & score</strong> — the winner is decided instantly!</li>
+      </ul>
+
+      <h2>🏆 Who Beats Who?</h2>
+      <ul class="list">
+        <li>🪨 Rock crushes Scissors</li>
+        <li>✂️ Scissors cut Paper</li>
+        <li>📄 Paper covers Rock</li>
+        <li>🤝 Same move? It’s a draw!</li>
+      </ul>
+
+      <h2>⭐ Extra Fun Rules</h2>
+      <ul class="list">
+        <li>Play Best of 3, Best of 5, or create your own series.</li>
+        <li>Keep track of your wins and try to beat your high score.</li>
+        <li>It’s a mix of quick thinking and a little luck 🍀.</li>
+      </ul>
+
+      <h2>⚡ Fair Play</h2>
+      <ul class="list">
+        <li>No cheats, no hacks — just pure fun.</li>
+        <li>Respect your opponent (even the sneaky AI 😉).</li>
+        <li>Most importantly — have fun! 🎉</li>
+      </ul>
+    </section>
+
+    <footer>
+      <small>© <span id="year"></span> — Made by Rudra</small>
+    </footer>
+  </div>
+  
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

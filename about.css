@@ -1,0 +1,130 @@
+
+.about-section {
+    background: #f3d3a3;
+    
+    padding: 60px 20px;
+}
+
+.about-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff7f0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-card h2 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+.about-card p {
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.about-note {
+    font-style: italic;
+    opacity: 0.9;
+    margin-top: 6px;
+}
+
+
+.social-links {
+    margin-top: 18px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #ffb02e;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #391c0b;
+    font-weight: 600;
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.social-btn .icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: currentColor;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 540px) {
+    .about-card {
+        padding: 22px;
+    }
+
+    .about-card h2 {
+        font-size: 24px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none
+}
+
+body {
+    background-color: #F2D0A4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    height: max-content;
+}
+
+div.navbar {
+    background-color: #C03221;
+    color: white;
+    padding: 2.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+footer {
+    color:black;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
